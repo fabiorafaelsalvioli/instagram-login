@@ -1,0 +1,191 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-family: sans-serif;
+	font-size: 16px;
+}
+
+body{
+	width: 100%;
+	min-height: 100vh;
+	background-color: rgb(243, 243, 243);
+	text-align: center;
+	color: #262626;
+}
+
+article{
+	width: 70%;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: start;
+}
+
+article a{
+	font-weight: bold;
+	color: #05f;
+}
+
+
+footer{
+	width: 50%;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+	margin: 0 auto 3rem;
+	color:  #777777;
+}
+
+footer li{
+	list-style: none;
+}
+
+footer li>a{
+	color: #777777;
+}
+
+
+/* ------IDs------*/
+
+/*Section Photo*/
+
+#insta-photo{
+	display: flex;
+	justify-content: center;
+	width: 50%;
+}
+
+
+#insta-photo div img{
+	height: 54rem; 
+}
+
+/*Section Form Account*/
+
+/*Div Login*/
+
+#insta-account{
+	width: 50%;
+	margin-top: 1rem;
+}
+
+#insta-logo{
+	margin-bottom: 1rem;
+}
+
+#insta-login{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#insta-login input,button{
+	width: 100%;
+	padding: .7rem 0;
+	margin: .7rem 0;
+}
+
+#insta-login button{
+	color: #ffffff;
+	border-radius: .5rem;
+	background-color: #0095f6;
+	border:  none;
+}
+
+/*Div Form Division*/
+
+#insta-form-division{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 1rem 0;
+	color:  #777777;
+}
+
+#insta-form-division hr{
+	width: 100%;
+}
+
+#insta-form-division p{
+	margin: 0 .5rem;
+}
+
+/*Div Form Recover Password*/
+
+#insta-facelogin-passwordrecover a{
+	display: block;
+	margin-top: 2rem;
+}
+
+/*Div App Links*/
+
+#insta-get-app{
+	display: flex;
+	flex-direction: column;
+	margin-top: 2rem;
+}
+
+#app-links{
+	display: inline-flex;
+	justify-content: space-evenly;
+}
+
+#app-links a img{
+	margin-top: 2rem;
+	max-height: 3rem;
+}
+
+/*Footer*/
+
+/*Footer Navigation*/
+#insta-navigation ul{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-bottom: 1rem;
+}
+
+.insta-login-block{
+	background-color: #ffffff;
+	border: .1rem solid lightgray;
+	padding: 2rem;
+	margin: .7rem 0;
+}
+
+/* Media Queries */
+
+@media (max-width: 1000px){
+	article{
+		width: 90%;
+	}
+
+	#insta-photo{
+		width: 50%;
+	}
+
+	#insta-account{
+		width: 50%;
+    }
+}
+
+@media (max-width: 650px){
+	#insta-photo{
+		display: none;
+	}
+	
+	#insta-account{
+		width: 100%;
+    }
+
+    #insta-navigation{
+    	margin-top: 1rem;
+    }
+
+    #insta-navigation li{
+    	padding: .7rem;
+    }
+    
+}
